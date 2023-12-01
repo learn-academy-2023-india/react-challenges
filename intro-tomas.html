@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (
+            <>
+                <Header />
+                <Content />
+                <Footer />
+
+            </>
+        )
+      }
+
+      const Header = () => {
+        return (
+            <> 
+                <h1>India Cohort</h1>
+        
+            </>
+        )
+      }
+
+
+      const Content = () => {
+        return (
+            <>
+            <ul>
+                    <li>Andrew</li>
+                    <li>Shawn</li>
+                    <li>Brandon</li>
+                    <li>Chantel</li>
+                    <li>Garry</li>
+                    <li>Hiro</li>
+                    <li>Irvin</li>
+                    <li>Isaac</li>
+                    <li>Jimmy</li>
+                    <li>Jamar</li>
+                    <li>Jeff</li>
+                    <li>Jeremie</li>
+                    <li>Joshua</li>
+                    <li>Keoni</li>
+                    <li>Saaka</li>
+                    <li>Leo</li>
+                    <li>Mckenley</li>
+                    <li>Michael</li>
+                    <li>Soza</li>
+                    <li>Rod</li>
+                    <li>Xavier</li>
+                    <li>Guillermo</li>
+                    <li>Plamen</li>
+                    <li>Victor</li>
+                    <li>Tuguldur</li>
+            </ul>
+            </>
+        )
+      }
+
+      const Footer = () => {
+        return (
+            <>
+                <footer>Tomas</footer> 
+            </>)
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
