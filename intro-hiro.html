@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+   
+  </head>
+  <body>
+    <div id="react-container"></div>
+    <div style="text-align:center;"></div>"
+    <script type="text/babel">
+      const App = () => {
+        return(
+        <>
+       
+        <h1> Hello 2023 India Cohort!</h1>
+        <h1>This is the unordered list of my classmates</h1><ul>
+            <li>Yoshiiro Yamada</li>
+            <li>Shawn Biter</li>
+            <li>Brandon Kim</li>
+            <li>Chantel Carter</li>
+            <li>Garry Greathouse</li>
+            <li>Irvin Moore</li>
+            <li>J Franks</li>
+            <li>Jamar Watson</li>
+            <li>Jeff Nail</li>
+            <li>Jeremie Joseph</li>
+            <li>Joshua Walker</li>
+            <li>Leo Ramos</li>
+            <li>Mckenley Scullark</li>
+            <li>Michael Egner</li>
+            <li>Rober Sarsoza</li>
+            <li>Tomas Trevino</li>
+            <li>Xavier Fripp</li>
+        </ul>
+        <h2>This is the footer</h2><footer>Bye intro HTML </footer>
+        <ImageSource />
+        <Conditional />
+        </>
+        )
+        
+      }
+
+      const ImageSource = () =>{
+        return (
+            <p>
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/d/d7/Funny_Image_of_Dog_with_open_teeth.png" alt= "Dog smiling" width ="300" height="300" /> </p>
+        )
+      }
+
+      const Conditional = () => {
+        let Conditional = 19
+        if(Conditional > 25){
+            return "You can rent a car."
+        }else if (Conditional > 18){
+            return "You can kind of rent a car"
+        } else{
+            return "You can't rent a car"
+        }
+        
+    }
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
