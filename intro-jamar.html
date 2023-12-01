@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (
+          <>
+            <h1>India 2023 LEARN ACADEMY COHORT</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+              molestiae, qui delectus cumque fugiat mollitia eius quod iusto nam
+              illum magni perferendis ab sed omnis ullam est eum porro autem!
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+              molestiae, qui delectus cumque fugiat mollitia eius quod iusto nam
+              illum magni perferendis ab sed omnis ullam est eum porro autem!
+            </p>
+            <Content />
+            <Footer />
+          </>
+        )
+      }
+
+      const Content = () => {
+        return (
+            <>
+             <h3>Welcome to LEARN Academy!</h3>
+             <ul>Jamar Watson</ul>
+             <ul>Jeremie Joseph</ul>
+             <ul>Andrew Balink</ul>
+             <ul>Brandon Kim</ul>
+             <ul>Chantel Carter</ul>
+             <ul>Joshua Walker</ul>
+             <ul>Shawn Biter</ul>
+             <ul>Garry Greathouse</ul>
+             <ul>Irvin Moore</ul>
+             <ul>Jimmie Franks</ul>
+             <ul>Jeff Nail</ul>
+             <ul>Leo Ramos</ul>
+             <ul>Hiro Yamada</ul>
+             <ul>Keoni Springer</ul>
+             <ul>Sakka</ul>
+             <ul>Mckenley Scyllark</ul>
+             <ul>Michael Egner</ul>
+             <ul>Robert Sarsoza</ul>
+             <ul>Roderick Vongsa</ul>
+             <ul>Tomas Trevino</ul>
+             <ul>Tuguldur Batsaikhan</ul>
+             <ul>Victor Crooks</ul>
+             <ul>Xavier Fripp</ul>
+            </>
+        )
+      }
+
+      const Footer = () => {
+        return (
+            <>
+            <h3>By: Mr. Jamar Watson</h3>
+            </>
+        )
+      }
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
