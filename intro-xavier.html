@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return (
+            <>
+            <h1> India Cohort </h1>
+            <ul>
+                <li>Leo</li>
+                <li>Shawn</li>
+                <li>Irvin</li>
+                <li>Isaac</li>
+                <li>Garry</li>
+                <li>Soza</li>
+                <li>McKinley</li>
+                <li>Michael</li>
+                <li>Andrew</li>
+                <li>Tomas</li>
+                <li>Jeff</li>
+                <li>Keoni</li>
+                <li>Jimmy</li>
+                <li>Brandon</li>
+                <li>Hiro</li>
+                <li>Jamar</li>
+                <li>Sakaa</li>
+                <li>Xavier</li>
+                <li>Jeremie</li>
+                <li>Rod</li>
+                <li>Josh</li>
+                <li>Chantelle</li>
+                <li>Sarah</li>
+            </ul>
+            </>
+      )}
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
+
+<!-- 📚 User Stories
+As a user, I see a Header component with the name of your cohort.
+As a user, I can see a Content component that contains an unordered list of all your classmates.
+As a user, I can see a Footer component with your name. -->
