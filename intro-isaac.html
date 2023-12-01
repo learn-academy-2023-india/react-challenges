@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <!-- React Container
+        📚 User Stories
+        As a user, I see a Header component with the name of your cohort.
+        As a user, I can see a Content component that contains an unordered list of all your classmates.
+        As a user, I can see a Footer component with your name. -->
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const names = ["Leo", "Shawn", "Irvin", "Garry", "Soza", "Mckenley", "Michael", "Andrew", "Tomas", "Jeffrey", "Keoni", "Jimmy", "Brandon", "Hiro", "Jamar", "Sakaa", "Xavier", "Jeremie", "Rod K", "Joshua", "Chantel", "Sarah"];
+      const App = () => {
+        return <>
+        <h1> India Cohort </h1>
+        <ul> {names.map(name => <li key={name}>{name}</li>)} </ul>
+        <footer> Isaac </footer>
+        </>
+      }
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+
+</html>
