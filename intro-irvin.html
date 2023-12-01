@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      const App = () => {
+        return ( 
+        <>
+        <Header />
+        <Content />
+        <Footer />
+        </>
+        )
+      }
+      const Header = () => {
+        return (
+          <>
+          <h1>India Cohort</h1>
+          </>
+        )
+      }
+      const Content = () => {
+        return (
+          <>
+          <h3> India Cohort Names</h3>
+          <ul>
+            <li> Everyonesname</li>
+            <li> Irvin</li>                 
+            <li>Garry</li>
+<li>Victor</li>
+<li>Mckenley</li>
+<li>Andrew</li>
+<li>Jeffrey</li>
+<li>Jimmy</li>
+<li>Leo</li>
+<li>Hiro</li>
+<li>Jamar</li>
+<li>Brandon</li>
+<li>Sakaa</li>
+<li>Keoni</li>
+<li>Xavier</li>
+<li>Tomas</li>
+<li>Jeremie</li>
+<li>Michael</li>
+<li>Rod K</li>
+<li>Soza</li>
+<li>Joshua</li>
+<li>Isaac</li>
+<li>Chantel</li>
+<li>Shawn</li>
+<li>Tuguldur</li>
+<li>Sarah</li>
+          </ul>
+      
+          </>  
+        )
+      }
+
+      const Footer = () => {
+        return(
+          <>
+          <footer>Irvin Moore</footer>
+          </>
+        )
+      }
+
+      const domContainer = document.querySelector("#react-container")
+      const root = ReactDOM.createRoot(domContainer)
+      root.render(<App />)
+    </script>
+  </body>
+</html>
+
