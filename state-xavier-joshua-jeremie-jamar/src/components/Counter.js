@@ -15,7 +15,7 @@ const Counter = () => {
 
   return (
     <div onClick={handleClick} className="counter-box" style={{ backgroundColor: count}}>
-      Count {count}
+      Color: {count}
     </div>
   )
 }

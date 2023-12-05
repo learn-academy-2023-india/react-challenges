@@ -1,6 +1,7 @@
 import React from "react"
 import Counter from "./components/Counter"
 import "./App.css"
+import BoxManager from "./components/BoxManager"
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <Counter />
         <Counter />
         <Counter />
+        <BoxManager />
       </div>
     </>
   )

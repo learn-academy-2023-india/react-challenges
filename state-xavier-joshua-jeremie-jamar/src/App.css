@@ -11,3 +11,16 @@
   justify-content: space-around;
 }
 
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box-container {
+  display: flex;
+}
