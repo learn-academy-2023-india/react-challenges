@@ -1,13 +1,12 @@
 import './App.css';
-import Square from './components/Square';
-import Square2 from './components/Square2'
+import Buttons from './components/Buttons';
+
 
 function App() {
   return (
     
 <>
-    <Square />
-    <Square2 />
+    <Buttons />
 </>
   )
 }

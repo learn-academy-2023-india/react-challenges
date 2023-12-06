@@ -42,11 +42,19 @@ const Square = () => {
     // within the div, it will pass in the array, colorNames, then the hook, currentColor. 
     // The hook will pass in the same method as handleClick
   return (
+<>
+
+{/* <div> 
+   <button onClick={addASquare}>Add a Square</button>
+   <button onClick={removeASquare}>Remove a Square</button>
+</div> */}
+
     <div style={{width: '200px',height: '200px',backgroundColor: colorNames[currentColor],textAlign: 'center',lineHeight: '100px',cursor: 'pointer', border: '2px solid black'}} onClick={handleClick}>
 
       {colorNames[currentColor]}
 
     </div>
+    </>
   )
 }
 
