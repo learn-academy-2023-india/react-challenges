@@ -1,52 +1,26 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import React, {useState} from "react"
-import "./App.css" 
-import Counter from "./components/Counter"
-import Square from "./components/Square"
-
+import "./App.css"
 
 const App = () => {
-  const [count, setCount] = useState(0)
-  const handleClick = () => {
-    setCount (count + 1)
-  }
+  const [rainBow, setRainBow] = useState("white")
+
   return (
     <>
-      <h1>Counter Application</h1>
-      <div onClick={handleClick}>Count {count}</div>
-      <div className="counter-box">
-      <Counter />
-      <Counter />
-      <Counter />
-      </div>
-      <Square />
+      <h1>Color Changer</h1>
+      <div className="color-box">{rainBow}</div>
     </>
   )
 }
 
 export default App
+// const colorArray = () =>
+// const allColors = ["red", "orange", "yellow", "green", "blue", "purple"] ** ask about ""
+// const colorSelect = allColors [Math.floor(Math.random() * allColors.length)]
+// setRainBow(colorSelect) 
+// const colorClick = () => {
+// setRainBow(allColors)
+// }
+
+// code is for after the return
+
+<div onClick={colorClick}rainBow> 
