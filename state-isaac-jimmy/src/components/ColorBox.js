@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import ColorString from "./ColorString"
+
 
 const ColorBox = () => {
   const [color, setColor] = useState(0)
@@ -14,7 +14,8 @@ const ColorBox = () => {
   return (
     <div onClick={handleClick} className="square" style = { {backgroundColor: color} }>
     <button onClick = {handleClick} >
-    #randomNum
+    {color} 
+    {/* changed for button label chose "color". color is hex value chosen at random */}
     </button>
     </div>
     
