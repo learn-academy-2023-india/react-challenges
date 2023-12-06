@@ -1,0 +1,26 @@
+.counter-box {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box-container {
+  display: flex;
+}
