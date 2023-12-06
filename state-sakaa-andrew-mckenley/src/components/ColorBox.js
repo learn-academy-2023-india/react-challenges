@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
 const ColorBox = () => {
-    const colors = ['white','red', 'orange', 'yellow', 'green', 'blue', 'indigo','purple', 'pink'];
+    const colorChoice = ['white','red', 'orange', 'yellow', 'green', 'blue', 'indigo','purple', 'pink','brown','black'];
     const [currentColorIndex, setCurrentColorIndex] = useState(0);
     const changeColor = () => {
-      setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
+      setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colorChoice.length);
     };
     const removeBox = () => {
     };
@@ -14,7 +14,7 @@ const ColorBox = () => {
           width: '200px',
           height: '200px',
           border: '2px solid black',
-          backgroundColor: colors[currentColorIndex],
+          backgroundColor: colorChoice[currentColorIndex],
           display: 'inline-block',
           margin: '5px',
           textAlign: 'center',
@@ -23,7 +23,7 @@ const ColorBox = () => {
         }}
         onClick={changeColor}
       >
-        {colors[currentColorIndex]}
+        {colorChoice[currentColorIndex]}
       </div>
     );
   };
