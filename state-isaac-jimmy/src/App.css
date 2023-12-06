@@ -1,6 +1,6 @@
-/* .App {
+.App {
   text-align: center;
-} */
+}
 
 /* .App-logo {
   height: 40vmin;
@@ -36,6 +36,7 @@
     transform: rotate(360deg);
   }
 } */
+
 .square {
   border:3px solid rgb(0, 0, 0);
   height: 200px;
@@ -43,4 +44,5 @@
   display: inline-block;
   margin: 1px;
   text-align: center;
+  justify-content: center;
 }

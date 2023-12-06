@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 
 const ColorBox = () => {
-  const [color, setColor] = useState(0)
+  const [color, setColor] = useState('#FFFFFF')
   
 
   const handleClick = () => {
