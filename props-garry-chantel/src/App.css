@@ -1,0 +1,23 @@
+.container {
+  border: 5px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.diceBox {
+  border: 5px solid black; 
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+
+.rolls {
+  border: 5px solid black; 
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+
+body {
+  padding: 20px;
+}
