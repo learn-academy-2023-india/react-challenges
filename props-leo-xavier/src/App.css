@@ -1,1 +1,6 @@
-
+.dice {
+  border: 2px dashed black;
+  height: 300px;
+  width: 200px;
+  padding: 10px;
+}
