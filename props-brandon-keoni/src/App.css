@@ -1,0 +1,20 @@
+/* Mathfloor.MathRandom int 1-6
+
+onClick
+
+rollLog
+
+img src */
+
+.dice {
+    height: 200px;
+    width: 200px;
+    border-color: 5px black;
+    border-style: solid;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
