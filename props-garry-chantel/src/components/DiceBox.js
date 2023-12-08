@@ -8,7 +8,7 @@ const DiceBox = (props) => {
     return (
       <>
         <div className="diceBox">
-          <p>Dice Box</p>
+          <p>Dice</p>
           <Dice />
         </div>
       </>

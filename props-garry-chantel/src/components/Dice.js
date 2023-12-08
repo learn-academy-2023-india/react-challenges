@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 
 const Dice = (props) => {
-    const [diceResult, setDiceResult] = useState(null)
+    const [diceResult, setDiceResult] = useState("")
   
     const rollDice = () => {
       const result = Math.floor(Math.random() * 6) + 1
@@ -9,14 +9,16 @@ const Dice = (props) => {
     }
   
     return (
-      <div className="diceBox" style={{ border: "2px", padding: "5px", height: "100px", width: "100px"}}>
+      <div className="diceBox" style={{ border: "10px", padding: "20px", height: "125px", width: "100px" }}>
         <h2>{props.heading}</h2>
-        <div onClick={rollDice} style={{ cursor: "pointer", border: "px solid black", padding: "10px" }}>
-          {/* Your content goes here */}
-          {diceResult !== null && <p>Result: {diceResult}</p>}
+        <div className="onClick" onClick={rollDice} style={{}}>
+          {diceResult !== null && <p className="dice">{diceResult}</p>}
         </div>
       </div>
     )
   }
 
 export default Dice
+
+//  border: "5px solid black", padding: "5px", fontsize: "25px"  
+// border: "10px", padding: "20px", height: "125px", width: "100px"

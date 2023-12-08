@@ -3,12 +3,17 @@
   padding: 20px;
   display: flex;
   justify-content: center;
+  min-width: 500px;
 }
 .diceBox {
   border: 5px solid black; 
   height: 300px;
   width: 300px;
   padding: 10px;
+  margin-right: 10px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .rolls {
@@ -16,8 +21,29 @@
   height: 300px;
   width: 300px;
   padding: 10px;
+  margin-left: 10px;
 }
 
 body {
   padding: 20px;
+}
+
+.dice {
+  font-size: 25px;
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-width: 50px;
+  min-height: 50px;  
+  /* position: center; */
+}
+
+.dice-content {
+  align-self: center;
+}
+
+.onClick {
+  border: 5px solid black;
+  padding: 5px;
 }
