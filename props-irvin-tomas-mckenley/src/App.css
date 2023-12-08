@@ -1,0 +1,14 @@
+.card {
+  border: 2px dashed black;
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+} 
