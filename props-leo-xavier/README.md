@@ -9,9 +9,15 @@ App.js: all state variables, component calls, passing props.
 
 User Stories
 As a user, I can see a square box on the screen with a black border and a white background.
-Plan is to add the applicable CSS declarations and import CSS file to App.js; apply to className in App.css. 
+//Plan is to add the applicable CSS declarations and import CSS file to App.js; apply to className in App.css. 
 
 As a user, I can click on the box to roll the dice and see the result of my roll in the box.
+//input- no parameters
+output - a different value from what the dice lands on
+(change value of the state variable(roll))
+function dice roll
+processes create the function setter function to change the value of roll
+math.random, * length of the array
 As a user, I can see my roll logged and see the roll log continue to grow as I roll the dice.
 
 🏔 Stretch Goals
