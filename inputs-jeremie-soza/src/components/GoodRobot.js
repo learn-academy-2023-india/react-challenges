@@ -1,12 +1,3 @@
-// import React from "react"
-// const GoodRobot = (props) => {
-//   return (
-//     <p>{props.goodRobotInput}</p>
-//   )
-// }
-// export default GoodRobot
-
-
 import React from "react"
 
 const GoodRobot = (props) => {
@@ -14,3 +5,7 @@ const GoodRobot = (props) => {
 }
 
 export default GoodRobot
+
+
+
+
