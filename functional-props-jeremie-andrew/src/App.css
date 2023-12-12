@@ -1,0 +1,16 @@
+.app-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  flex: 1
+}
+
+.selected-items-container {
+  flex: 1
+}
