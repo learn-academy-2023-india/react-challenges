@@ -7,7 +7,7 @@ This is a simple React application that features four robots that modify user in
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/robot-app.git
+git clone https://github.com/learn-academy-2023-india/react-challenges/tree/main/inputs-jeremie-soza
 cd robot-app
 
 ## Installation
